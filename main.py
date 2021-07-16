@@ -67,3 +67,32 @@ print(df_row_reindex)
 print(df_row_reindex.sort_values("Date"))
 
 print(df_row_reindex.drop_duplicates(subset=['Date']))
+
+newdata_list=df_row_reindex.values.tolist()
+print(newdata_list)
+
+print(df_row_reindex[["Date", "Open"]])
+
+data_wo_dup=df_row_reindex.drop_duplicates(subset=['Date'])
+print(data_wo_dup)
+date_and_open=data_wo_dup[["Date", "Open"]]
+print(date_and_open)
+
+date_and_open_list=date_and_open.values.tolist()
+print(date_and_open_list)
+
+print(max(date_and_open_list))
+print(min(date_and_open_list))
+
+only_open=data_wo_dup[["Open"]]
+print(only_open)
+only_open_list=only_open.values.tolist()
+print(only_open_list)
+
+print(min(only_open_list))
+print(max(only_open_list))
+max_open=(max(only_open_list))
+print(max_open)
+open_string=str(max_open)
+print(type(open_string))
+print('The highest opening prices of Amazons stock was $' + open_string + '.')
