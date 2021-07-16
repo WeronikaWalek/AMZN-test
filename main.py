@@ -114,7 +114,14 @@ print(type(only_date_list))
 
 import matplotlib.pyplot as plt
 
+plt.hist(date_and_open["Open"])
 
+plt.show()
+
+import datetime
+
+x=datetime.datetime.now()
+print(x)
 
 
 
