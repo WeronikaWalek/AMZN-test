@@ -96,3 +96,16 @@ print(max_open)
 open_string=str(max_open)
 print(type(open_string))
 print('The highest opening prices of Amazons stock was $' + open_string + '.')
+
+only_date=data_wo_dup[["Date"]]
+print(only_date)
+only_date_list=only_date.values.tolist()
+print(only_date_list)
+
+date_and_open_array=np.array([only_date_list, only_open_list])
+print(date_and_open_array)
+
+open_array=np.array([only_open_list])
+print(open_array)
+print(np.mean(open_array))
+
