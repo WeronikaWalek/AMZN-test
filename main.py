@@ -109,3 +109,12 @@ open_array=np.array([only_open_list])
 print(open_array)
 print(np.mean(open_array))
 
+print(type(only_open_list))
+print(type(only_date_list))
+
+import matplotlib.pyplot as plt
+
+
+
+
+
