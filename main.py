@@ -123,5 +123,14 @@ import datetime
 x=datetime.datetime.now()
 print(x)
 
+year=pd.DatetimeIndex(date_and_open["Date"]).year
+print(year)
 
+print(type(year))
+
+yearlist=year.values.tolist()
+print(yearlist)
+
+plt.plot(only_open_list, yearlist)
+plt.show()
 
