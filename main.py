@@ -114,8 +114,8 @@ print(type(only_date_list))
 
 import matplotlib.pyplot as plt
 
-plt.hist(date_and_open["Open"])
-
+plt.hist(x=date_and_open["Open"], bins=500, label='Amazon Opening Price $')
+plt.legend()
 plt.show()
 
 import datetime
@@ -133,4 +133,14 @@ print(yearlist)
 
 plt.plot(only_open_list, yearlist)
 plt.show()
+
+plt.scatter(x = only_open_list, y = yearlist, color = 'green')
+plt.xlabel('Opening Price $')
+plt.ylabel('Year')
+plt.title('Amazon Opening Price Development 1997-2021')
+plt.show()
+
+
+
+
 
